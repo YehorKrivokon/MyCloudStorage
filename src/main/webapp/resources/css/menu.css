@@ -1,0 +1,187 @@
+
+#container {
+    width:960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 1.6em 0;
+    line-height: 1.6em;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 22px 0 18px 0;
+}
+
+/* Menu bar background color */
+#navigation{
+    background: #000;
+    opacity: 0.9;
+}
+
+/* Menu Item text color */
+#nav li a,
+#nav li a:hover,
+#nav li,
+#nav li:hover  {
+    color: #fff;
+    cursor: pointer;
+}
+
+#nav li:hover  {
+    background: #9ACD32;
+}
+
+/* Text Shadow */
+#nav li a,
+#nav li a:hover,
+#nav li,
+#nav li:hover  {
+    text-shadow: 0 1px 1px #333;
+}
+
+/* Search form colors */
+.searchform input, .searchform input:not(:focus){
+    color:#B1B1B1;
+    background: #fff;
+}
+.searchfield:focus{
+    color: #000;
+}
+
+#menu_div{
+    clear: both;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+
+#navigation, #menu_div {
+    width: 1000px;
+    border-radius:20px 10px 0 0;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#menu_div, #navigation, #menu, #nav{
+    height: 45px; /* menu height */
+}
+
+#menu {
+    width: 850px;
+    margin:0 auto; /*center the menu*/
+    padding:0;
+    position: relative;
+}
+
+#nav{
+    width: 850px;
+    margin:auto 180px;
+    padding:0;
+    position: relative;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+#nav li a,#nav li {
+    float:left;
+    list-style:none;
+    position:relative;
+    line-height: 45px;
+    padding:0 15px;
+    text-decoration:none;
+    margin:0;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+
+/*====================
+	Search form
+====================*/
+
+.searchform {
+    position: absolute;
+    right: -30px;
+    top: 9px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    border: 0;
+    padding: 0;
+}
+.searchform input {
+    font: normal 12px/100% Arial, Helvetica, sans-serif;
+}
+.searchform .searchfield {
+    height: 27px;
+    line-height: 27px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 150px;
+    border: 2px solid #333;
+    outline: none;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    -moz-box-shadow: inset 1px 1px 2px #A1A1A1;
+    -webkit-box-shadow: inset 1px 1px 2px #A1A1A1;
+    box-shadow: inner 1px 1px 2px #A1A1A1;
+}
+
+.searchfield:focus{
+    font-weight: 700;
+    width: 220px;
+}
+
+.searchfield:not(:focus){
+    width: 150px;
+}
+
+
+/*========================
+		Transitions
+========================*/
+
+#nav li a:hover,
+#nav li:hover  {
+    -webkit-transition-property:color, background;
+    -webkit-transition-duration: 0.5s, 0.5s;
+    -webkit-transition-timing-function: linear, ease-out;
+}
+
+.searchfield:focus,
+.searchfield:not(:focus){
+    -webkit-transition-property:width;
+    -webkit-transition-duration: 0.5s, 0.5s;
+    -webkit-transition-timing-function: linear, ease-out;
+}
+
+#menu_div:hover,
+#navigation:hover,
+#menu_div,
+#navigation,
+#nav li a,
+#nav li,
+#menu_div:not(:hover),
+#navigation:not(:hover)
+{
+    -webkit-transition-property:opacity;
+    -webkit-transition-duration: 0.5s, 0.5s; /* duration in seconds */
+    -webkit-transition-timing-function: linear, ease-out;
+} /* Menu transparency animation */
+
+
+

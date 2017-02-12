@@ -1,0 +1,194 @@
+
+@keyframes "login" {
+	0% {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		opacity: 0;
+		margin-top: 380px;
+	}
+	100% {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+		opacity: 1;
+		margin-top: 380px;
+	}
+
+}
+
+@-moz-keyframes login {
+	0% {
+		filter: alpha(opacity=0);
+		opacity: 0;
+		margin-top: 380px;
+	}
+	100% {
+		filter: alpha(opacity=100);
+		opacity: 1;
+		margin-top: 380px;
+	}
+
+}
+
+@-webkit-keyframes "login" {
+	0% {
+		filter: alpha(opacity=0);
+		opacity: 0;
+		margin-top: 380px;
+	}
+	100% {
+		filter: alpha(opacity=100);
+		opacity: 1;
+		margin-top: 380px;
+	}
+
+}
+
+@-ms-keyframes "login" {
+	0% {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		opacity: 0;
+		margin-top: 380px;
+	}
+	100% {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+		opacity: 1;
+		margin-top: 380px;
+	}
+
+}
+
+@-o-keyframes "login" {
+	0% {
+		filter: alpha(opacity=0);
+		opacity: 0;
+		margin-top: -50px;
+	}
+	100% {
+		filter: alpha(opacity=100);
+		opacity: 1;
+		margin-top: 380px;
+	}
+
+}
+
+/* Main CSS */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	font-family: sans-serif;
+}
+
+#slick-login {
+	width: 220px;
+	height: 155px;
+	position: absolute;
+	left: 50%;
+	margin-left: -110px;
+	margin-top: 380px;
+
+	-webkit-animation: login 1s ease-in-out;
+	-moz-animation: login 1s ease-in-out;
+	-ms-animation: login 1s ease-in-out;
+	-o-animation: login 1s ease-in-out;
+	animation: login 1s ease-in-out;
+}
+
+#slick-login label {
+	display: none;
+}
+
+
+#slick-login input[type="text"],#slick-login input[type="password"] {
+	width: 100%;
+	height: 40px;
+	position: relative;
+	margin-top: 7px;
+	font-size: 14px;
+	color: #444;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, .49);
+
+	padding-left: 20px;
+
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	border-radius: 6px;
+
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+	background-image: linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+
+	-webkit-box-shadow: inset 0px 2px 0px #d9d9d9;
+	box-shadow: inset 0px 2px 0px #d9d9d9;
+
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+#slick-login input[type="text"]:focus,#slick-login input[type="password"]:focus {
+	-webkit-box-shadow: inset 0px 2px 0px #a7a7a7;
+	box-shadow: inset 0px 2px 0px #a7a7a7;
+}
+
+#slick-login input:first-child {
+	margin-top: 0px;
+}
+
+#slick-login input[type="submit"] {
+	width: 100%;
+	height: 40px;
+	margin-top: 7px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: 0px -1px 0px #5b6ddc;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, .49);
+
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	border-radius: 6px;
+
+	background-color: #5466da;
+	background-image: -webkit-linear-gradient(bottom, #82c882 0%, #6cbf6c 100%);
+	background-image: -moz-linear-gradient(bottom, #82c882 0%, #6cbf6c 100%);
+	background-image: -o-linear-gradient(bottom, #82c882 0%, #6cbf6c 100%);
+	background-image: -ms-linear-gradient(bottom, #82c882 0%, #6cbf6c 100%);
+	background-image: linear-gradient(bottom, #82c882 0%, #6cbf6c 100%);
+
+	-webkit-box-shadow: inset 0px 1px 0px #6cbf6c;
+	box-shadow: inset 0px 1px 0px #6cbf6c;
+
+	cursor: pointer;
+
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+#slick-login input[type="submit"]:hover {
+	background-color: #5f73e9;
+	background-image: -webkit-linear-gradient(bottom, #82c882 0%, #6cbf6c 100%);
+	background-image: -moz-linear-gradient(bottom, #82c882 0%, #6cbf6c 100%);
+	background-image: -o-linear-gradient(bottom, #82c882 0%, #6cbf6c 100%);
+	background-image: -ms-linear-gradient(bottom, #82c882 0%, #6cbf6c 100%);
+	background-image: linear-gradient(bottom, #82c882 0%, #6cbf6c 100%);
+
+	-webkit-box-shadow: inset 0px 1px 0px #6cbf6c;
+	box-shadow: inset 0px 1px 0px #6cbf6c;
+	margin-top: 10px;
+}
+
+
+
